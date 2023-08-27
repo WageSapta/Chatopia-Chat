@@ -1,3 +1,3 @@
-# App chat with name CHATOPIA
+# App chat with name Chatopia
 
 this project use Firebase as database
