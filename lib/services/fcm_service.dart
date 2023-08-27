@@ -37,8 +37,7 @@ class FcmService {
     // LAUNCH APPLICATION WHEN APP IS TERMINATED
     _fcm.getInitialMessage().then((RemoteMessage? message) async {
       if (message == null) return;
-      await Firebase.initializeApp(
-          options: DefaultFirebaseOptions.currentPlatform);
+      await Firebase.initializeApp();
       log("getInitialMessage: ${message.data['body']} from ${message.data['title']}");
       final data = message.data;
       Screen.pushReplacementNamed(

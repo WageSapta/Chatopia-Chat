@@ -3,7 +3,6 @@ We believe, the class name must be unique.
 If there is a conflicting class name in this file,
 it means you have to rename it to something more unique.
 */
-export 'package:chatopia/firebase_options.dart';
 export 'package:chatopia/models/message_model.dart';
 export 'package:chatopia/models/user_model.dart';
 export 'package:chatopia/pages/account_page.dart';
