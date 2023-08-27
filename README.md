@@ -3,9 +3,9 @@ App chat with label name Chatopia
 
 this project use Firebase as database
 
-Installation
+Setup
 --------------
 
-1. add config.json as server key store 
+1. add config.json as server key fcm store 
 2. add google-services.json
 3. don't forget to firebase configure
