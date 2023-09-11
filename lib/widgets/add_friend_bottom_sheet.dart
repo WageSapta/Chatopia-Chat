@@ -58,7 +58,7 @@ class _AddBottomSheetState extends State<AddBottomSheet> {
                                 child: const SizedBox(
                                   height: 23,
                                   width: 23,
-                                  child: CircularProgressIndicator(),
+                                  child: CircularProgressIndicator.adaptive(),
                                 ),
                               ),
                               Visibility(

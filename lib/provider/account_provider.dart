@@ -138,7 +138,7 @@ class AccountProvider extends ChangeNotifier {
 
   setBgChild() {
     if (_loadingProfile) {
-      return const CircularProgressIndicator(color: Colors.deepPurple);
+      return const CircularProgressIndicator.adaptive();
     }
     if (_profile == null && _imgTemporary.isEmpty) {
       return LayoutBuilder(

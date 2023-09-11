@@ -11,7 +11,7 @@ class MyLoading extends StatelessWidget {
       color: transparent! ? Colors.transparent : Colors.black.withOpacity(.4),
       height: double.infinity,
       width: double.infinity,
-      child: const CircularProgressIndicator(),
+      child: const CircularProgressIndicator.adaptive(),
     );
   }
 }

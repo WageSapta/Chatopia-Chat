@@ -91,7 +91,7 @@ class _FriendsPageState extends State<FriendsPage> {
                   )
                 : value.loading || !isDone
                     ? const Center(
-                        child: CircularProgressIndicator(),
+                        child: CircularProgressIndicator.adaptive(),
                       )
                     : value.listFriends.isEmpty && isDone
                         ? Center(

@@ -71,7 +71,7 @@ class ActivityPageState extends State<ActivityPage> {
         if (snapshot.hasError) return Center(child: H5("Error"));
         if (snapshot.connectionState == ConnectionState.waiting) {
           if (snapshot.data == null) {
-            return const Center(child: CircularProgressIndicator());
+            return const Center(child: CircularProgressIndicator.adaptive());
           }
         }
         if (snapshot.data!.docs.isEmpty) {
@@ -175,7 +175,7 @@ class ActivityPageState extends State<ActivityPage> {
       builder: (context, snapshot) {
         if (snapshot.hasError) return Center(child: H5("Error"));
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Center(child: CircularProgressIndicator());
+          return const Center(child: CircularProgressIndicator.adaptive());
         }
         if (snapshot.data!.docs.isEmpty) {
           return Center(child: H5("no requests available"));
@@ -321,7 +321,7 @@ class ActivityPageState extends State<ActivityPage> {
       builder: (context, snapshot) {
         if (snapshot.hasError) return Center(child: H5("Error"));
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Center(child: CircularProgressIndicator());
+          return const Center(child: CircularProgressIndicator.adaptive());
         }
         if (snapshot.data!.docs.isEmpty) {
           return Center(child: H5("no waiting available"));

@@ -138,7 +138,7 @@ class _MessagesPageState extends State<MessagesPage> {
               if (value.isLoading)
                 const Expanded(
                   child: Center(
-                    child: CircularProgressIndicator(),
+                    child: CircularProgressIndicator.adaptive(),
                   ),
                 )
               else
@@ -199,7 +199,7 @@ class _MessagesPageState extends State<MessagesPage> {
                             child: SizedBox(
                               height: 30,
                               width: 30,
-                              child: CircularProgressIndicator(),
+                              child: CircularProgressIndicator.adaptive(),
                             ),
                           ),
                         );

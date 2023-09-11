@@ -96,7 +96,7 @@ class _ChatsPageState extends State<ChatsPage> {
                     if (snapshot.hasError) return Center(child: H3("Error"));
                     if (snapshot.connectionState == ConnectionState.waiting) {
                       if (snapshot.data == null) {
-                        return const Center(child: CircularProgressIndicator());
+                        return const Center(child: CircularProgressIndicator.adaptive());
                       }
                     }
                     List<QueryDocumentSnapshot<Map<String, dynamic>>> friends =
