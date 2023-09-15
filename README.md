@@ -7,5 +7,5 @@ Setup
 --------------
 
 1. add config.json as server key fcm store 
-2. add google-services.json
+2. add google-services.json in app module
 3. don't forget to firebase configure
