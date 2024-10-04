@@ -1,4 +1,4 @@
-App chat with label name Chatopia
+App chat we called "Chatopia"
 ============================
 
 this project use Firebase as database
